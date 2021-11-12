@@ -1,17 +1,13 @@
 :root {
-  --header-background-color: #ffffff;
+  --active-text-color: #ffffff;
   --primary-background-color: #e5e5e5;
   --second-background-color: #2f303a;
-  --team-background-color: #f5f4fa;
+  --secondary-background-color: #f5f4fa;
   --logo-text-color: #000000;
   --accent-text-color: #2196f3;
-  --active-text-color: #ffffff;
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --footer-contact-link-color: rgba(255, 255, 255, 0.6);
-  --primary-button-backgroud-color: #2196f3;
-  --secondary-button-background-color: #f5f4fa;
-  --secondary-btn-active-bcg-color: #2196f3;
 }
 body {
   color: var(--primary-text-color);
@@ -29,39 +25,29 @@ address {
 }
 /* Хедер */
 .header {
-  background-color: var(--header-background-color);
+  background-color: var(--active-text-color);
 }
 
 /* Логотип */
-.header-logo {
+.logo {
   color: var(--logo-text-color);
 }
-.footer-logo {
+.logo-white {
   color: var(--active-text-color);
 }
 .web-logo {
   color: var(--accent-text-color);
 }
-.header-logo,
+.logo,
 .web-logo,
-.footer-logo {
+.logo-white {
   font-family: Raleway, sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-.header-logo:hover,
-.header-logo:focus,
-.header-logo:active,
-.web-logo:hover,
-.web-logo:focus,
-.web-logo:active,
-.footer-logo:hover,
-.footer-logo:focus,
-.footer-log:active {
-  color: var(--accent-text-color);
-}
+
 /* Навигация */
 .nav-link {
   color: var(--title-text-color);
@@ -84,10 +70,7 @@ address {
 .nav-link:active,
 .contact-link:hover,
 .contact-link:focus,
-.contact-link:active,
-.nav-link.current:hover,
-.nav-link.current:focus,
-.nav-link.current:active {
+.contact-link:active {
   color: var(--accent-text-color);
 }
 /* Шапка */
@@ -103,7 +86,7 @@ address {
   text-align: center;
 }
 .primary-button {
-  background-color: var(--primary-button-backgroud-color);
+  background-color: var(--accent-text-color);
   color: var(--active-text-color);
   cursor: pointer;
   font-family: inherit;
@@ -116,7 +99,7 @@ address {
 .primary-button:hover,
 .primary-button:focus,
 .primary-button:active {
-  background-color: var(--primary-button-backgroud-color);
+  background-color: var(--accent-text-color);
   color: var(--active-text-color);
 }
 /* Особенности */
@@ -186,7 +169,7 @@ address {
 
 /* Портфолио */
 .secondary-button {
-  background-color: var(--secondary-button-background-color);
+  background-color: var(--secondary-background-color);
   color: var(--title-text-color);
   cursor: pointer;
   font-family: inherit;
@@ -199,7 +182,7 @@ address {
 .secondary-button:focus,
 .secondary-button:hover,
 .secondary-button:active {
-  background-color: var(--secondary-btn-active-bcg-color);
+  background-color: var(--accent-text-color);
   color: var(--active-text-color);
 }
 .project-title {
