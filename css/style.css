@@ -1,17 +1,17 @@
 :root {
-  --active-text-color: #ffffff;
+  --primary-color: #212121;
+  --secondary-color: #ffffff;
   --primary-background-color: #e5e5e5;
   --second-background-color: #2f303a;
   --secondary-background-color: #f5f4fa;
   --logo-text-color: #000000;
-  --accent-text-color: #2196f3;
-  --primary-text-color: #757575;
-  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --secondary-text-color: #757575;
   --footer-contact-link-color: rgba(255, 255, 255, 0.6);
 }
 body {
-  color: var(--primary-text-color);
-  background-color: var(--primary-background-color);
+  color: var(--secondary-text-color);
+  background-color: var(--secondary-color);
   font-family: Roboto, sans-serif;
 }
 ul {
@@ -24,36 +24,37 @@ address {
   font-style: normal;
 }
 /* Хедер */
-.header {
-  background-color: var(--active-text-color);
-}
+/* .header {
+  background-color: var(--primary-background-color);
+} */
 
 /* Логотип */
 .logo {
   color: var(--logo-text-color);
-}
-.logo-white {
-  color: var(--active-text-color);
-}
-.web-logo {
-  color: var(--accent-text-color);
-}
-.logo,
-.web-logo,
-.logo-white {
   font-family: Raleway, sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
+.logo-white {
+  color: var(--secondary-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.web-logo {
+  color: var(--accent-color);
+}
 
 /* Навигация */
 .nav-link {
-  color: var(--title-text-color);
+  color: var(--primary-color);
 }
 .nav-link.current {
-  color: var(--accent-text-color);
+  color: var(--accent-color);
 }
 .contact-link {
   color: inherit;
@@ -71,14 +72,14 @@ address {
 .contact-link:hover,
 .contact-link:focus,
 .contact-link:active {
-  color: var(--accent-text-color);
+  color: var(--accent-color);
 }
 /* Шапка */
 .main-section {
   background-color: var(--second-background-color);
 }
 .main-title {
-  color: var(--active-text-color);
+  color: var(--secondary-color);
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
@@ -86,8 +87,8 @@ address {
   text-align: center;
 }
 .primary-button {
-  background-color: var(--accent-text-color);
-  color: var(--active-text-color);
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
   cursor: pointer;
   font-family: inherit;
   font-size: 16px;
@@ -99,12 +100,12 @@ address {
 .primary-button:hover,
 .primary-button:focus,
 .primary-button:active {
-  background-color: var(--accent-text-color);
-  color: var(--active-text-color);
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
 }
 /* Особенности */
 .feature-title {
-  color: var(--title-text-color);
+  color: var(--primary-color);
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -117,7 +118,7 @@ address {
 }
 /* Чем мы занимаемся + Наша команда */
 .section-title {
-  color: var(--title-text-color);
+  color: var(--primary-color);
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
@@ -125,10 +126,10 @@ address {
   text-align: center;
 }
 .team-section {
-  background-color: var(--team-background-color);
+  background-color: var(--primary-background-color);
 }
 .teammate-title {
-  color: var(--title-text-color);
+  color: var(--primary-color);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.19;
@@ -146,7 +147,7 @@ address {
   background-color: var(--second-background-color);
 }
 .map-link {
-  color: var(--active-text-color);
+  color: var(--secondary-color);
 }
 .footer-contact-link {
   color: var(--footer-contact-link-color);
@@ -164,13 +165,13 @@ address {
 .footer-contact-link:hover,
 .footer-contact-link:focus,
 .footer-contact-link:active {
-  color: var(--accent-text-color);
+  color: var(--accent-color);
 }
 
 /* Портфолио */
 .secondary-button {
-  background-color: var(--secondary-background-color);
-  color: var(--title-text-color);
+  background-color: var(--primary-background-color);
+  color: var(--primary-color);
   cursor: pointer;
   font-family: inherit;
   font-size: 16px;
@@ -182,18 +183,18 @@ address {
 .secondary-button:focus,
 .secondary-button:hover,
 .secondary-button:active {
-  background-color: var(--accent-text-color);
-  color: var(--active-text-color);
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
 }
 .project-title {
-  color: var(--title-text-color);
+  color: var(--primary-color);
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .project-text {
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.88;
